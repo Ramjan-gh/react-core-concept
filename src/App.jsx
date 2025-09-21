@@ -1,22 +1,26 @@
 import './App.css'
+import ToDo from './todo';
 
 function App() {
   
-
+  const time = 50;
   return (
     <>
       <h1>React Core Concepts</h1>
-      <Students name="Ramjna" dept="CSE"></Students>
+      <ToDo task="Learn React" isDone ={true} time={time}></ToDo>
+      <ToDo task="Revise JS" isDone ={false} ></ToDo>
+      <ToDo task="Take a shower" isDone ={true} ></ToDo>
+      {/* <Students name="Ramjna" dept="CSE"></Students>
       <Students name="Hridoy" dept="EEE"></Students>
       <Person></Person>
+      <ToDo task="Learn React" isDone ={true} ></ToDo>
       <Developer name="Mojumdar" tech="JS"></Developer>
       <Developer name="Rajon" tech="Python"></Developer>
-      <Developer name="Shabana" tech="Java"></Developer>
+      <Developer name="Shabana" tech="Java"></Developer> */}
     </>
   )
 
-  function 
-  Developer(props){
+  function Developer(props){
     console.log(props);
     return(
       <div style={{
